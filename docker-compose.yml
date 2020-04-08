@@ -3,7 +3,7 @@ services:
   apiserver:
     build: ./ADAPT-2_Server
     volumes:
-      -  ~/adaptData:/server/data 
+      -  /home/310/mp1168/adaptData:/server/data 
     ports:
       - "3061:3060"
     network_mode: host
