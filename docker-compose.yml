@@ -3,7 +3,7 @@ services:
   apiserver:
     build: ./ADAPT-2_Server
     volumes:
-      -  /home/310/mp1168/adaptData:/server/data 
+      -  /mnt/d10/assda/publish/ANU/adapt2-test-archive:/server/data 
     ports:
       - "3061:3060"
     network_mode: host
