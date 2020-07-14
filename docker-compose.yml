@@ -7,3 +7,4 @@ services:
     ports:
       - "3061:3060"
     network_mode: host
+    container_name: apiserver
