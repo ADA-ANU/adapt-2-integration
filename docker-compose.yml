@@ -2,6 +2,7 @@ version: "3.2"
 services:
   apiserver:
     build: ./ADAPT-2_Server
+    restart: always
     volumes:
       -  /mnt/d10/assda/publish/ANU/adapt2-test-archive:/server/data 
     ports:
