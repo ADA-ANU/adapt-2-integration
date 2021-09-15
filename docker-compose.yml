@@ -2,9 +2,11 @@ version: "3.2"
 services:
   apiserver:
     build: ./ADAPT-2_Server
+    extra_hosts:
+      - dataverse.ada.edu.au:150.203.254.136
     restart: always
     volumes:
-      -  /mnt/d10/assda/publish/ANU/adapt2-test-archive:/server/data 
+      - /mnt/d10/assda/publish/ANU/adapt2-test-archive:/server/data
     ports:
       - "3061:3060"
     network_mode: host
